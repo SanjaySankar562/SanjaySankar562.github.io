@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Project 2</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload" oncontextmenu = "return false" onmousedown="return false" onselectstart="return false">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Intro</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">	
+							<li class="active"><a href="project2.html">Project 2</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/sanjay-sankar" class="icon brands alt fa-linkedin"><span class="label">Linkedin</span></a></li>
+									<li><a href="https://github.com/SANJAY-562" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li></ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>Face Detection</h1>
+									<p>The objective of face detection is, from the incoming image, to find a series of data of the same face in a set of training images in a database. The great difficulty is ensuring that this process is carried out in real-time, something that is not available to all biometric facial recognition software providers.</p>
+								</header>
+								<p>Face recognition is a pattern recognition technique and one of the most important biometrics; it is used in a broad spectrum of applications. The accuracy is not a major problem that specifies the performance of automatic face recognition system alone, the time factor is also considered a major factor in real time environments. Recent architecture of the computer system can be employed to solve the time problem, this architecture represented by multi-core CPUs and manycore GPUs that provide the possibility to perform various tasks by parallel processing. However, harnessing the current advancements in computer architecture is not without difficulties.</p>
+                                <b>Module - 1 Facial detection Design & Implementation</b>
+								<div class="image main"><img src="images/project2/flowchart.png" width="300" height="500"></div>
+                                <p>To recognize a face, it is first important that we detect/locate a face in an image/video. There is various facial detection software that can detect a Human face in an image. We extract a human face and then move on to the next step.
+                                    Viola-Jones algorithm is one of the popular face detection algorithms.The next step is to extract features from a face using a face embedding model. A face embedding is a vector that represents the features extracted from the face and we can use these vectors to recognize faces. Note that face embedding for the same face may be really close in the vector whereas the face embeddings of two different faces may be really far away. We get a face embedding after passing the image through a face embedding model.
+We have face embedding for each face in the system. Whenever we pass a new face to the system, it calculates its face embedding and compares it with the ones we already have. The face is recognized, its face embedding closely matches any other face embedding in the database.</p>
+                                <b>Module-2 Facial Expression Design and Implementation</b>
+                                <p>A deep learning Model based on CNN before, it is noted that the original images collected from online courses need to be preprocessed, including face detection, alignment, rotation, and resize, according to the different elements in the original images. the process of the FER, and the detailed steps of the proposed framework are as follows: first, the cameras built in the electronic devices are utilized to capture the facial images of the attending students. Second, the facial expression recognition algorithm trained by the standard facial expression database is employed to detect the faces and classify the facial expressions. the histogram of probability distribution about the expression is plotted and provided in the form of h5 model graph</p>
+								<div class="image main"><img src="images/project2/Output.png" width="300" height="500"></div>
+                                <div class="image main"><img src="images/project2/Performance.png" width="300" height="500"></div>
+                                <p>To get a better model we need to train with more epoch and with more images. For that we need high computational power, which cannot be done a personal computer.</p>
+									<ul class="actions special">
+										<li><a href="index.html" class="button">Back to My Portfolio</a></li>
+										<li><a href="https://github.com/Abijspy/Facial-Regonication-" class="button">Github Link</a></li>
+									</ul>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<section class="Address">
+						<section class="alt">
+							<h3>Address</h3>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3892.4441084788873!2d79.97699121462546!3d12.684403291044722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52fc69be437e87%3A0xd3168c79657a780c!2sGokulapuram%20Main%20Rd%2C%20Gokulapuram%2C%20Tamil%20Nadu%20603001!5e0!3m2!1sen!2sin!4v1673010513942!5m2!1sen!2sin" width="1010" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><section>
+							<h3>Phone</h3>
+							<p>(+91) 8838507723</p>
+						</section>
+						<section>
+							<h3>Email</h3>
+							<p><a href="mailto:sanjaysankar028@gmail.com">sanjaysankar028@gmail.com</a></p>
+						</section>
+						<section>
+							<h3>Social</h3>
+							<ul class="icons alt">
+								<li><a href="https://www.linkedin.com/in/sanjay-sankar" class="icon brands alt fa-linkedin"><span class="label">Linkedin</span></a></li>
+								<li><a href="https://github.com/SANJAY-562" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>								</ul>						</section>
+					</section>
+				</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Sanjay s</li><li>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
