@@ -1,2 +1,1 @@
-To know about me click here:
- https://sanjaysankar562.github.io/
+To know about me click here: sanjay.github.com
